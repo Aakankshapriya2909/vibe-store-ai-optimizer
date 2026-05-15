@@ -88,13 +88,18 @@ config.py       ← All thresholds and scoring weights (single source of truth)
 
 ## Contribution Note
 
-**Solo submission** — Aakanksha Priya
+**Team of 2:** Aakanksha Priya & Astha Pradhan
 
-- Product thinking, architecture design, all code written by the submitter
-- AI tools (Claude) used for pair programming and debugging — all decisions and code reviewed and understood by the submitter
-- Time split: ~60% product thinking and documentation, ~40% engineering
+This was a joint effort across all areas — both members contributed to product thinking, 
+engineering, and documentation throughout the build period.
 
----
+- Product research, problem framing, and scope decisions were made together
+- Architecture design and scoring logic were designed collaboratively
+- Code was written, reviewed, and tested by both members
+- Documentation reflects shared thinking across the entire project
+
+AI tools (Claude) used for pair programming and debugging — all decisions, tradeoffs, 
+and reasoning are our own, documented in `DECISIONS.md` and `PRODUCT_DOCUMENT.md`.
 
 ## Environment Variables
 
