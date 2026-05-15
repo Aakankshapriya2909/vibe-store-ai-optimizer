@@ -121,18 +121,16 @@ and reasoning are our own, documented in `DECISIONS.md` and `PRODUCT_DOCUMENT.md
 ## Screenshots
 
 ### Home Screen
-![Home](01_home.png)
+![Home](screenshots/01_home.png)
 
-### AI Readiness Scores
-![Readiness Score](01_low_score.png)
+### AI Readiness Score
+![Low Score](screenshots/01_low_score.png)
 
 ### Gap Analysis
-![Gap Analysis](04_gap_analysis.png)
-
+![Gap Analysis](screenshots/04_gap_analysis.png)
 
 ### Ranked Action Plan
-![Action Plan](05_action_plan.png)
+![Action Plan](screenshots/05_action_plan.png)
 
 ### Per-Product Confidence Scores
-![Product Confidence](06_product_confidence.png)
-
+![Product Confidence](screenshots/06_product_confidence.png)
