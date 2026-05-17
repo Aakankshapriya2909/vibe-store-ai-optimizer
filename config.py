@@ -1,3 +1,5 @@
+# config.py — Single source of truth for all scoring weights and thresholds
+# Modify these values to tune the AI readiness scoring engine
 # config.py
 # All thresholds and constants in one place.
 # Scoring rationale documented inline.
