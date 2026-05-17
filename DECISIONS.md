@@ -66,3 +66,8 @@ Max 5 workers to stay within Groq free-tier rate limits.
 
 **Tradeoff:** Thread order is non-deterministic — product order
 is explicitly restored after completion via index mapping.
+
+## May 18
+- Added .gitignore to clean up repo structure
+- Added screenshots to README for better demo visibility
+- Decided to keep analyzer.py fully deterministic for testability
