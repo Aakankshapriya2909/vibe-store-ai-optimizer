@@ -1,7 +1,6 @@
-.env
-__pycache__/
-*.pyc
-.pytest_cache/
-*.egg-info/
-desktop.ini
-.DS_Store
+__pycache__/ 
+*.pyc 
+.env 
+*.zip 
+desktop.ini 
+Screenshots/desktop.ini 
