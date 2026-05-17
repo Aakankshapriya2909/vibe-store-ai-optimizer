@@ -25,6 +25,13 @@ Most merchants don't know this is happening. This tool makes it visible and scor
 | **Downloadable report** | Full .txt export |
 
 ---
+## Screenshots
+
+![Home](Screenshots/01_home.png.png)
+![Low Score](Screenshots/01_low_score.png.png)
+![Gap Analysis](Screenshots/04_gap_analysis.png.png)
+![Action Plan](Screenshots/05_action_plan.png.png)
+![Product Confidence](Screenshots/06_product_confidence.png.png)
 
 ## How to Run
 
