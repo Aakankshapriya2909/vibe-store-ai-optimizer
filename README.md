@@ -1,4 +1,5 @@
 # AI Representation Optimizer
+🚀 **[Live Demo](https://vibe-store-ai-optimizer.streamlit.app)**
 **Kasparro Hackathon — Track 5 (Advanced): AI Representation Optimizer**
 
 > A merchant-facing tool that shows Shopify store owners exactly why AI shopping agents misrepresent them — and what to fix, in priority order.
