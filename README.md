@@ -44,6 +44,14 @@ Opens at `http://localhost:8501`
 
 ---
 
+## How to Use
+
+1. Select a demo store from the left sidebar
+2. In the **"How do you want AI agents to describe your store?"** box, type your positioning statement — describe what makes your store unique, what you offer, and any specific claims (e.g. fast shipping, EMI, eco-friendly)
+3. Click **"Run analysis"**
+4. View your AI readiness score, gap analysis, action plan, and per-product confidence scores
+5. Download the full report as a .txt file
+
 ## Run Tests
 
 ```bash
