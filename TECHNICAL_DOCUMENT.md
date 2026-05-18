@@ -219,3 +219,33 @@ Opens at `http://localhost:8501`
 | `test_analyzer.py` | pytest test suite — 13 tests covering scoring and edge cases |
 | `DECISIONS.md` | Running log of every build decision and tradeoff |
 | `.env` | API keys (not committed to git) |
+
+
+---
+
+## Failure Handling
+
+### Groq API Timeout
+If a Groq call times out, the UI shows a warning and falls back to
+the deterministic score only. The AI perception section is skipped
+rather than crashing the app.
+
+### Rate Limit Hits
+ThreadPoolExecutor is capped at 5 workers. If Groq returns a 429,
+the affected product shows "scoring unavailable" inline — other
+products complete normally.
+
+### Missing Store Fields
+analyzer.py treats missing fields as empty strings, not errors.
+Every check has a null-safe path — the scorer never throws on
+incomplete store data.
+
+---
+
+## Testing Strategy
+
+13 pytest tests in test_analyzer.py cover:
+- Scoring: correct deductions for each issue type
+- Intent gap: keyword present vs absent vs false positive
+- Word boundary: "emi" inside "accessories" regression test
+- Sort order: action plan sorted by impact descending
