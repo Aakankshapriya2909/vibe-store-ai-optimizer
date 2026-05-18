@@ -118,3 +118,25 @@ The score is fully deterministic — pure Python rule checks. This means it's re
 - Score improvement on second run vs first run
 - Reduction in "I couldn't confirm" responses from AI agents for stores that used the tool
 - Time to fix (merchants who act within 24 hours of seeing the report)
+
+---
+
+## v2 Roadmap
+
+Features we scoped out for v1 but would build next:
+
+### Live Shopify Integration
+Connect directly to a merchant's store via Shopify Admin API.
+No manual data entry — pull products, policies, and FAQs automatically.
+
+### Weekly Re-score Alerts
+Re-run the analysis on a schedule and email the merchant when their
+AI readiness score drops (e.g. after editing a policy page).
+
+### Competitor Comparison
+Let a merchant enter a competitor's store URL and compare AI readiness
+scores side by side — shows exactly where they're losing ground.
+
+### Semantic Intent Matching
+Replace keyword-based intent gap detection with embedding similarity.
+Would catch paraphrased claims that the current regex misses.
