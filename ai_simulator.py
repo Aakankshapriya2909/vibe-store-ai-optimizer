@@ -115,9 +115,10 @@ def _build_store_summary(data: dict) -> str:
 
 def simulate_ai_perception(data: dict) -> str:
     """
-    Asks Groq/Llama to describe the store as a shopping AI would to a buyer.
-    Returns a plain text description string, or an error-prefixed string if
-    the API is unavailable so the UI degrades gracefully.
+    Sends store data to Groq/Llama and asks how an AI shopping agent
+    would describe this store to a buyer.
+    Returns: raw LLM response string.
+    All LLM calls in the project are isolated to this file.
     """
     summary = _build_store_summary(data)
 
@@ -214,15 +215,9 @@ def _score_single_product(p: dict) -> dict:
 
 def get_product_confidence(products: list) -> list:
     """
-    For each product (up to 15), asks Groq/Llama how confidently it would
-    recommend it, on a scale of 1-10, with a one-line reason.
-
-    Calls run concurrently (max 5 threads) to reduce wall-clock time
-    from ~30s sequential to ~8-10s for 15 products.
-
-    Returns a list of dicts: { title, score, reason, failed }
-    failed=True means the score is a fallback (5), not a real AI assessment.
-    This is surfaced in the UI so merchants know which scores to trust.
+    Scores each product on how confidently an AI agent would recommend it.
+    Uses ThreadPoolExecutor with max 5 workers to respect Groq free-tier limits.
+    Order is restored after concurrent execution via index mapping.
     """
     target = products[:15]
 
