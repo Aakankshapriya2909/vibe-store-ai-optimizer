@@ -25,13 +25,6 @@ Most merchants don't know this is happening. This tool makes it visible and scor
 | **Downloadable report** | Full .txt export |
 
 ---
-## Screenshots
-
-![Home](Screenshots/01_home.png.png)
-![Low Score](Screenshots/01_low_score.png.png)
-![Gap Analysis](Screenshots/04_gap_analysis.png.png)
-![Action Plan](Screenshots/05_action_plan.png.png)
-![Product Confidence](Screenshots/06_product_confidence.png.png)
 
 ## How to Run
 
@@ -124,3 +117,22 @@ and reasoning are our own, documented in `DECISIONS.md` and `PRODUCT_DOCUMENT.md
 - Description quality check is length-based only (not prose quality)
 - Intent gap detection uses keyword matching — won't catch paraphrased claims
 - Groq free tier rate limits: max 5 concurrent product scoring calls
+
+## Screenshots
+
+### Home Screen
+![Home](01_home.png)
+
+### AI Readiness Scores
+![Readiness Score](01_low_score.png)
+
+### Gap Analysis
+![Gap Analysis](04_gap_analysis.png)
+
+
+### Ranked Action Plan
+![Action Plan](05_action_plan.png)
+
+### Per-Product Confidence Scores
+![Product Confidence](06_product_confidence.png)
+
