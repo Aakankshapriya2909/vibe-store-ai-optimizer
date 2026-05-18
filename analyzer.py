@@ -104,7 +104,11 @@ def _build_full_store_text(shop: dict, products: list, pages: list) -> str:
 # ---------------------------------------------------------------------------
 
 def check_policies(shop: dict) -> list:
-    """Checks refund, shipping, privacy policies for existence and minimum length."""
+    """
+    Checks whether the store has defined return, shipping, and payment policies.
+    Returns a list of issues where policies are missing or vague.
+    Missing policies are a leading cause of AI agent misrepresentation.
+    """
     issues = []
 
     refund_body = ((shop.get("refundPolicy") or {}).get("body") or "").strip()
@@ -149,7 +153,11 @@ def check_policies(shop: dict) -> list:
 
 
 def check_products(products: list) -> list:
-    """Checks each product for description quality and alt text."""
+    """
+    Validates product descriptions for length and completeness.
+    Short or missing descriptions reduce AI agent confidence scores.
+    Uses length threshold from config.py — not prose quality.
+    """
     issues = []
     seen_desc_issue = 0
 
